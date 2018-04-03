@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00730FE52073205700C12D32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00730FE42073205700C12D32 /* HomeViewController.swift */; };
+		00730FE7207322E500C12D32 /* AddItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00730FE6207322E500C12D32 /* AddItemsViewController.swift */; };
 		007E43E92070AFA600523BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007E43E82070AFA600523BF6 /* AppDelegate.swift */; };
-		007E43EB2070AFA600523BF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007E43EA2070AFA600523BF6 /* ViewController.swift */; };
 		007E43EE2070AFA600523BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007E43EC2070AFA600523BF6 /* Main.storyboard */; };
 		007E43F02070AFA600523BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007E43EF2070AFA600523BF6 /* Assets.xcassets */; };
 		007E43F32070AFA600523BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007E43F12070AFA600523BF6 /* LaunchScreen.storyboard */; };
+		007E43FB2070C3DD00523BF6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007E43FA2070C3DD00523BF6 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00730FE42073205700C12D32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		00730FE6207322E500C12D32 /* AddItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemsViewController.swift; sourceTree = "<group>"; };
 		007E43E52070AFA600523BF6 /* EasyOffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyOffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007E43E82070AFA600523BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		007E43EA2070AFA600523BF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		007E43ED2070AFA600523BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		007E43EF2070AFA600523BF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		007E43F22070AFA600523BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		007E43F42070AFA600523BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007E43FA2070C3DD00523BF6 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				007E43E82070AFA600523BF6 /* AppDelegate.swift */,
-				007E43EA2070AFA600523BF6 /* ViewController.swift */,
+				00730FE42073205700C12D32 /* HomeViewController.swift */,
+				00730FE6207322E500C12D32 /* AddItemsViewController.swift */,
 				007E43EC2070AFA600523BF6 /* Main.storyboard */,
+				007E43FA2070C3DD00523BF6 /* File.swift */,
 				007E43EF2070AFA600523BF6 /* Assets.xcassets */,
 				007E43F12070AFA600523BF6 /* LaunchScreen.storyboard */,
 				007E43F42070AFA600523BF6 /* Info.plist */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				007E43EB2070AFA600523BF6 /* ViewController.swift in Sources */,
+				007E43FB2070C3DD00523BF6 /* File.swift in Sources */,
+				00730FE7207322E500C12D32 /* AddItemsViewController.swift in Sources */,
 				007E43E92070AFA600523BF6 /* AppDelegate.swift in Sources */,
+				00730FE52073205700C12D32 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,11 +285,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3U6SKQ55KP;
 				INFOPLIST_FILE = EasyOffer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wushixing.EasyOffer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -292,11 +301,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3U6SKQ55KP;
 				INFOPLIST_FILE = EasyOffer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wushixing.EasyOffer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
